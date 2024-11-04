@@ -13,10 +13,10 @@ import static jm.task.core.jdbc.service.UserService.userDao;
 public class Main {
     public static void main(String[] args) throws SQLException, IllegalAccessException {
         User user = new User();
-
-        SessionFactory sessionFactory = new Configuration()  //реализация подключения через хайбернет
-                .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(User.class)
-                .buildSessionFactory();
+        userDao.createUsersTable();
+        userDao.saveUser("Jane", "Dou", 25);
+        userDao.saveUser("John", "Dou", 25);
+        userDao.saveUser("Jack", "Dou", 25);
+        userDao.removeUserById(1);
     }
 }
