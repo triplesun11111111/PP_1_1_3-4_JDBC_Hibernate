@@ -14,9 +14,9 @@ public class Main {
     public static void main(String[] args) throws SQLException, IllegalAccessException {
         User user = new User();
         userDao.createUsersTable();
-        userDao.saveUser("Jane", "Dou", 25);
-        userDao.saveUser("John", "Dou", 25);
-        userDao.saveUser("Jack", "Dou", 25);
+        userDao.saveUser("Jane", "Doe", 25);
+        userDao.saveUser("John", "Doe", 25);
+        userDao.saveUser("Jack", "Doe", 25);
         userDao.removeUserById(1);
     }
 }
