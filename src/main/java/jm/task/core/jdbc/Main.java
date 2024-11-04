@@ -16,7 +16,6 @@ public class Main {
         userDao.createUsersTable();
         userDao.saveUser("Jane", "Doe", 25);
         userDao.saveUser("John", "Doe", 25);
-        userDao.saveUser("Jack", "Doe", 25);
         userDao.removeUserById(1);
     }
 }
