@@ -31,16 +31,16 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void removeUserById(long id) throws SQLException {
-        userDao.removeUserById(id); // Вызываем метод UserDao
+        userDao.removeUserById(id);
     }
 
     @Override
     public List<User> getAllUsers() throws SQLException {
-        return userDao.getAllUsers(); // Вызываем метод UserDao
+        return userDao.getAllUsers();
     }
 
     @Override
     public void cleanUsersTable() throws SQLException {
-        userDao.cleanUsersTable(); // Вызываем метод UserDao
+        userDao.cleanUsersTable();
     }
 }
